@@ -1,0 +1,23 @@
+{
+  "name": "hsite",
+  "authors": [
+    "Jonathan Robin Langford"
+  ],
+  "description": "basic real estate site",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer#^1.4.0",
+    "iron-image": "polymerelements/iron-image#^1.2.3"
+  }
+}
