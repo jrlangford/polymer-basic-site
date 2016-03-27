@@ -6,7 +6,7 @@
 
 	<link rel="import" href="styles/app-theme.html">
 	<link rel="stylesheet" href="/styles/main.css">
-	<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
 	<link rel="import" href="/bower_components/iron-flex-layout/iron-flex-layout.html">
 	<link rel="import" href="bower_components/iron-image/iron-image.html">
 	<link rel="import" href="/bower_components/paper-header-panel/paper-header-panel.html">
@@ -18,6 +18,8 @@
 
     <style>
       .lefted {
+	position:absolute;
+	top: 200px;
 	left: 10px;
 	max-width: 300px;
       }
@@ -25,7 +27,7 @@
 
 </head>
 
-<simple-overlay id="plain" tabindex=-1 opened="true" no-cancel-on-esc-key no-cancel-on-outside-click class="lefted">
+<simple-overlay id="plain" tabindex=-1 opened no-cancel-on-esc-key no-cancel-on-outside-click class="lefted">
   <h2>This is an informative overlay!</h2>
   <p>Any cool description of the rendered images can be added here.</p>
 </simple-overlay>
@@ -39,12 +41,12 @@
 			<span class="space"></span>
 			<paper-icon-button icon="search"></paper-icon-button>
 		</paper-toolbar>
+		<div>
 		<div style="background-image:url(http://lorempixel.com/800/800); background-repeat:no-repeat; background-position: center; width:100%; height:600px; background-size:cover; text-align:center; display:table;">
-			<h3 style="vertical-align:middle; display:table-cell; color: white;">TESTING</h3>
 		</div>
 		<div style="background-image:url(http://lorempixel.com/800/900); background-repeat:no-repeat; background-position: center; width:100%; height:600px; background-size:cover; text-align:center; display:table;">
-			<h3 style="vertical-align:middle; display:table-cell; color: white;">TESTING</h3>
 
+		</div>
 		</div>
 	</paper-header-panel>
 
