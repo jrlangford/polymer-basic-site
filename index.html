@@ -13,7 +13,22 @@
 	<link rel="import" href="/bower_components/paper-toolbar/paper-toolbar.html">
 	<link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
 	<link rel="import" href="/bower_components/iron-icons/iron-icons.html">
+	<link rel="import" href="/bower_components/iron-overlay-behavior/iron-overlay-behavior.html">
+	<link rel="import" href="simple-overlay.html">
+
+    <style>
+      .lefted {
+	left: 10px;
+	max-width: 300px;
+      }
+    </style>
+
 </head>
+
+<simple-overlay id="plain" tabindex=-1 opened="true" no-cancel-on-esc-key no-cancel-on-outside-click class="lefted">
+  <h2>This is an informative overlay!</h2>
+  <p>Any cool description of the rendered images can be added here.</p>
+</simple-overlay>
 
 <body>
 	<paper-header-panel class="flex">
@@ -24,10 +39,15 @@
 			<span class="space"></span>
 			<paper-icon-button icon="search"></paper-icon-button>
 		</paper-toolbar>
-		<div style="position: absolute; top:0; background-image:url(http://lorempixel.com/800/800); background-repeat:no-repeat; background-position: center; width:100%; height:600px; background-size:cover; text-align:center; display:table;">
+		<div style="background-image:url(http://lorempixel.com/800/800); background-repeat:no-repeat; background-position: center; width:100%; height:600px; background-size:cover; text-align:center; display:table;">
 			<h3 style="vertical-align:middle; display:table-cell; color: white;">TESTING</h3>
 		</div>
+		<div style="background-image:url(http://lorempixel.com/800/900); background-repeat:no-repeat; background-position: center; width:100%; height:600px; background-size:cover; text-align:center; display:table;">
+			<h3 style="vertical-align:middle; display:table-cell; color: white;">TESTING</h3>
+
+		</div>
 	</paper-header-panel>
+
 </body>
 
 </html>
