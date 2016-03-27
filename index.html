@@ -1,16 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>poly</title>
+
+	<link rel="import" href="styles/app-theme.html">
+	<link rel="stylesheet" href="/styles/main.css">
 	<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+	<link rel="import" href="/bower_components/iron-flex-layout/iron-flex-layout.html">
 	<link rel="import" href="bower_components/iron-image/iron-image.html">
+	<link rel="import" href="/bower_components/paper-header-panel/paper-header-panel.html">
+	<link rel="import" href="/bower_components/paper-toolbar/paper-toolbar.html">
+	<link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+	<link rel="import" href="/bower_components/iron-icons/iron-icons.html">
 </head>
 
 <body>
-	<div>
-		<iron-image style="width:400px; height:400px" sizing="cover" src="http://lorempixel.com/1000/800"></iron-image>
-	</div>
+	<paper-header-panel class="flex">
+		<paper-toolbar class="medium">
+			<div>
+				<h1>Header</h1>
+			</div>
+			<span class="space"></span>
+			<paper-icon-button icon="search"></paper-icon-button>
+		</paper-toolbar>
+		<div style="position: absolute; top:0; background-image:url(http://lorempixel.com/800/800); background-repeat:no-repeat; background-position: center; width:100%; height:600px; background-size:cover; text-align:center; display:table;">
+			<h3 style="vertical-align:middle; display:table-cell; color: white;">TESTING</h3>
+		</div>
+	</paper-header-panel>
 </body>
 
 </html>
