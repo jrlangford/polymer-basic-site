@@ -17,39 +17,54 @@
 	<link rel="import" href="simple-overlay.html">
 
     <style>
-      .lefted {
+      .left-info {
 	position:absolute;
 	top: 200px;
 	left: 10px;
 	max-width: 300px;
       }
+
+      .header {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:40;
+      }
+
+      .rand-bimage {
+	      background-repeat:no-repeat;
+	      background-position: center;
+	      width:100%;
+	      height:600px;
+	      background-size:cover;
+	      text-align:center;
+	      display:table;
+      }
     </style>
 
 </head>
 
-<simple-overlay id="plain" tabindex=-1 opened no-cancel-on-esc-key no-cancel-on-outside-click class="lefted">
+<simple-overlay id="plain" tabindex=-1 opened no-cancel-on-esc-key no-cancel-on-outside-click class="left-info">
   <h2>This is an informative overlay!</h2>
   <p>Any cool description of the rendered images can be added here.</p>
 </simple-overlay>
 
+<simple-overlay id="header" tabindex=-1 opened no-cancel-on-esc-key no-cancel-on-outside-click class="header">
+	<div>
+		<h1>My awesome site!</h1>
+	</div>
+</simple-overlay>
+
 <body>
 	<paper-header-panel class="flex">
-		<paper-toolbar class="medium">
-			<div>
-				<h1>Header</h1>
-			</div>
-			<span class="space"></span>
-			<paper-icon-button icon="search"></paper-icon-button>
-		</paper-toolbar>
 		<div>
-		<div style="background-image:url(http://lorempixel.com/800/800); background-repeat:no-repeat; background-position: center; width:100%; height:600px; background-size:cover; text-align:center; display:table;">
+			<div class="rand-bimage" style="background-image:url(http://lorempixel.com/800/800);">
+			</div>
+			<div class="rand-bimage" style="background-image:url(http://lorempixel.com/800/900);">
+			</div>
 		</div>
-		<div style="background-image:url(http://lorempixel.com/800/900); background-repeat:no-repeat; background-position: center; width:100%; height:600px; background-size:cover; text-align:center; display:table;">
-
-		</div>
-		</div>
-	</paper-header-panel>
-
+        </paper-header-panel>
 </body>
 
 </html>
