@@ -4,29 +4,10 @@ body {
 	color: #333;                                                                                       
 } 
 
-//html, body {
-//	margin: 0;
-//	padding: 0;
-//}
-//
-
-//landing style not working for some reason
-.landing {
-	background-image:url(http://lorempixel.com/800/800);
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position: center;
-	background-color: #303030;
-	width:100%;
-	height: 600px;
-	text-align:center;
-	display:table;
-}
-
 .left-info {
 	position:absolute;
 	top: 200px;
-	left: 10px;
+	left: 20px;
 	max-width: 300px;
 }
 
@@ -47,9 +28,8 @@ body {
 	text-align:center;
 	display:table;
 }
-//
-//.landing h1 {
-//	display:table-cell;
-//	vertical-align:middle;
-//	color: white;
-//}
+
+.centered-element {
+	display:table-cell;
+	vertical-align:middle;
+}
